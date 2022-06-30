@@ -47,7 +47,7 @@ if __name__ == '__main__':
         if not period:
             period = 30
         else:
-            period = str(period)    # Convert str to int
+            period = int(period)    # Convert str to int
 
         d1 = datetime.date.today()
         d2 = (d1 + datetime.timedelta(period))
