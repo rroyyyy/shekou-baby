@@ -75,7 +75,7 @@ if __name__ == '__main__':
             if ret is not None and ret != -1:
                 print(f'{date}:{ret}')
                 if enable_bark:
-                    bark_push(token=bark_token, title="船票Get", content=ret)
+                    bark_push(token=bark_token, title="公主想要这天走吗？", content=ret)
                 if enable_serverchan and sct_token != "":
                     serverchan_push(token=sct_token, title="船票Get", desp=ret)
 
